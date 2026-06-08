@@ -261,7 +261,6 @@ body {
 .feature-card,
 .why-card,
 .impact-card,
-.counter-card,
 .contact-form,
 .contact-row {
   border-radius: 8px;
@@ -360,34 +359,6 @@ body {
   border-radius: 999px;
   background: var(--leaf);
   transform: translateY(-50%);
-}
-
-.stats-band {
-  background:
-    linear-gradient(90deg, rgba(20, 48, 34, 0.95), rgba(47, 125, 79, 0.88)),
-    url("https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=1600&q=80") center / cover;
-}
-
-.counter-card {
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.08);
-  padding: 1.4rem;
-  backdrop-filter: blur(12px);
-}
-
-.counter-number {
-  display: block;
-  color: var(--lime);
-  font-size: clamp(2.25rem, 5vw, 3.5rem);
-  font-weight: 900;
-  line-height: 1;
-}
-
-.counter-card span:last-child {
-  margin-top: 0.75rem;
-  display: block;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 700;
 }
 
 .product-card {
@@ -578,47 +549,19 @@ body {
   color: var(--forest);
 }
 
-.vietnam-map {
+.google-map {
   overflow: hidden;
   border: 1px solid rgba(23, 76, 51, 0.1);
   border-radius: 8px;
-  background: linear-gradient(135deg, #eef7f2, #fff8ed);
+  background: var(--mist);
   box-shadow: 0 16px 40px rgba(20, 48, 34, 0.08);
 }
 
-.vietnam-map svg {
+.google-map iframe {
   display: block;
   width: 100%;
-  height: auto;
-}
-
-.map-sea {
-  fill: #eef7f2;
-}
-
-.map-shape {
-  fill: #d8e7c8;
-  stroke: var(--forest);
-  stroke-width: 3;
-}
-
-.map-dot {
-  fill: var(--clay);
-  stroke: #fff;
-  stroke-width: 3;
-}
-
-.map-line {
-  fill: none;
-  stroke: var(--leaf);
-  stroke-dasharray: 7 7;
-  stroke-width: 3;
-}
-
-.vietnam-map text {
-  fill: var(--ink);
-  font-size: 18px;
-  font-weight: 800;
+  height: 320px;
+  border: 0;
 }
 
 .contact-form {
