@@ -1,5 +1,5 @@
 const I18N_STORAGE_KEY = 'greensantara.language';
-const DEFAULT_LANGUAGE = 'en';
+const DEFAULT_LANGUAGE = 'vi';
 const LOCALE_PATH = 'locales';
 
 const localeCache = new Map();
@@ -71,15 +71,27 @@ function applyTranslations() {
 
 // Keep all switchers synchronized when one language changes.
 function updateLanguageSwitchers() {
-  document.querySelectorAll('[data-language-current]').forEach((element) => {
-    const key = activeLanguage === 'vi' ? 'language_vietnamese' : 'language_english';
-    element.textContent = translate(key, activeLanguage.toUpperCase());
-  });
+  let currentLabel = activeLanguage.toUpperCase();
+  let currentFlag = '';
 
   document.querySelectorAll('[data-language-option]').forEach((option) => {
     const isActive = option.dataset.lang === activeLanguage;
     option.classList.toggle('active', isActive);
     option.setAttribute('aria-pressed', String(isActive));
+
+    if (isActive) {
+      const labelKey = option.dataset.languageLabel;
+      currentLabel = labelKey ? translate(labelKey, option.textContent.trim()) : option.textContent.trim();
+      currentFlag = option.dataset.flag || '';
+    }
+  });
+
+  document.querySelectorAll('[data-language-current]').forEach((element) => {
+    element.textContent = currentLabel;
+  });
+
+  document.querySelectorAll('[data-language-flag]').forEach((element) => {
+    element.textContent = currentFlag;
   });
 }
 
