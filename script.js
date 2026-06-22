@@ -6,6 +6,25 @@ const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);
 
+const fallbackMessages = {
+  menu_open: 'Open navigation menu',
+  menu_close: 'Close navigation menu',
+  form_error_name: 'Please enter your name.',
+  form_error_email: 'Please enter a valid email address.',
+  form_error_company: 'Please enter your company name.',
+  form_error_message: 'Please include a short message.',
+  form_error_review: 'Please review the highlighted fields.',
+  form_success: 'Thank you. Your message has been prepared for Green Santara JSC.'
+};
+
+const getTranslation = (key) => window.i18n?.t(key, fallbackMessages[key]) || fallbackMessages[key] || key;
+
+const setMenuToggleLabel = (isOpen) => {
+  const key = isOpen ? 'menu_close' : 'menu_open';
+  menuToggle.setAttribute('data-i18n-aria-label', key);
+  menuToggle.setAttribute('aria-label', getTranslation(key));
+};
+
 const setHeaderState = () => {
   header.classList.toggle('header-scrolled', window.scrollY > 24);
 };
@@ -17,14 +36,14 @@ menuToggle.addEventListener('click', () => {
   const isOpen = !mobileMenu.classList.contains('hidden');
   mobileMenu.classList.toggle('hidden', isOpen);
   menuToggle.setAttribute('aria-expanded', String(!isOpen));
-  menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+  setMenuToggleLabel(!isOpen);
 });
 
 document.querySelectorAll('#mobile-menu a').forEach((link) => {
   link.addEventListener('click', () => {
     mobileMenu.classList.add('hidden');
     menuToggle.setAttribute('aria-expanded', 'false');
-    menuToggle.setAttribute('aria-label', 'Open navigation menu');
+    setMenuToggleLabel(false);
   });
 });
 
@@ -82,7 +101,8 @@ function animateCounter(element) {
     const progress = Math.min((now - startTime) / duration, 1);
     const eased = 1 - Math.pow(1 - progress, 3);
     const value = Math.round(target * eased);
-    element.textContent = value.toLocaleString('en-US');
+    const language = window.i18n?.getLanguage() === 'vi' ? 'vi-VN' : 'en-US';
+    element.textContent = value.toLocaleString(language);
 
     if (progress < 1) {
       requestAnimationFrame(update);
@@ -95,10 +115,10 @@ function animateCounter(element) {
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
 const validators = {
-  name: (value) => value.trim().length >= 2 || 'Please enter your name.',
-  email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()) || 'Please enter a valid email address.',
-  company: (value) => value.trim().length >= 2 || 'Please enter your company name.',
-  message: (value) => value.trim().length >= 12 || 'Please include a short message.'
+  name: (value) => value.trim().length >= 2 || 'form_error_name',
+  email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()) || 'form_error_email',
+  company: (value) => value.trim().length >= 2 || 'form_error_company',
+  message: (value) => value.trim().length >= 12 || 'form_error_message'
 };
 
 form.addEventListener('submit', (event) => {
@@ -113,19 +133,19 @@ form.addEventListener('submit', (event) => {
 
     field.classList.toggle('invalid', hasError);
     field.setAttribute('aria-invalid', String(hasError));
-    error.textContent = hasError ? result : '';
+    error.textContent = hasError ? getTranslation(result) : '';
     if (hasError) isValid = false;
   });
 
   if (!isValid) {
-    status.textContent = 'Please review the highlighted fields.';
+    status.textContent = getTranslation('form_error_review');
     status.style.color = '#b42318';
     return;
   }
 
   form.reset();
   form.querySelectorAll('[aria-invalid]').forEach((field) => field.removeAttribute('aria-invalid'));
-  status.textContent = 'Thank you. Your message has been prepared for Green Santara JSC.';
+  status.textContent = getTranslation('form_success');
   status.style.color = '#174c33';
 });
 
@@ -136,5 +156,14 @@ form.querySelectorAll('input, textarea').forEach((field) => {
     const error = form.querySelector(`[data-error-for="${field.name}"]`);
     if (error) error.textContent = '';
     status.textContent = '';
+  });
+});
+
+document.addEventListener('i18n:languageChanged', () => {
+  const isOpen = !mobileMenu.classList.contains('hidden');
+  setMenuToggleLabel(isOpen);
+  status.textContent = '';
+  form.querySelectorAll('.field-error').forEach((error) => {
+    error.textContent = '';
   });
 });

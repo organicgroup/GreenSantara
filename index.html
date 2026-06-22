@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Green Santara JSC develops sustainable, traceable, and certified agricultural supply chains across Vietnam for coffee, black pepper, and macadamia.">
-  <meta name="keywords" content="Green Santara, sustainable agriculture Vietnam, traceable coffee, organic black pepper, macadamia Vietnam, EUDR coffee, farmer partnerships">
+  <meta name="description" content="Green Santara JSC develops sustainable, traceable, and certified agricultural supply chains across Vietnam for coffee, black pepper, and macadamia." data-i18n-content="seo_description">
+  <meta name="keywords" content="Green Santara, sustainable agriculture Vietnam, traceable coffee, organic black pepper, macadamia Vietnam, EUDR coffee, farmer partnerships" data-i18n-content="seo_keywords">
   <meta name="author" content="Green Santara JSC">
   <meta name="theme-color" content="#174c33">
-  <meta property="og:title" content="Green Santara JSC | Sustainable Agriculture in Vietnam">
-  <meta property="og:description" content="Cultivating sustainability, empowering farmers, and delivering traceable agricultural quality from Vietnam to global markets.">
+  <meta property="og:title" content="Green Santara JSC | Sustainable Agriculture in Vietnam" data-i18n-content="og_title">
+  <meta property="og:description" content="Cultivating sustainability, empowering farmers, and delivering traceable agricultural quality from Vietnam to global markets." data-i18n-content="og_description">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.greensantara.com">
   <meta property="og:image" content="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80">
   <meta name="twitter:card" content="summary_large_image">
-  <title>Green Santara JSC | Sustainable Agriculture Supply Chains</title>
+  <title data-i18n="site_title">Green Santara JSC | Sustainable Agriculture Supply Chains</title>
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
@@ -22,66 +22,63 @@
   <link rel="preconnect" href="https://cdn.tailwindcss.com">
   <link rel="preconnect" href="https://images.unsplash.com">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    document.documentElement.classList.add('js');
-
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            santara: {
-              forest: '#174c33',
-              leaf: '#2f7d4f',
-              moss: '#6f8f4e',
-              lime: '#c8d96f',
-              earth: '#8c6a43',
-              clay: '#b87645',
-              mist: '#f3f7ef',
-              ink: '#143022'
-            }
-          },
-          boxShadow: {
-            soft: '0 18px 45px rgba(20, 48, 34, 0.12)',
-            lift: '0 24px 70px rgba(20, 48, 34, 0.18)'
-          }
-        }
-      }
-    };
-  </script>
+  <script src="js/tailwind-config.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-white text-santara-ink antialiased">
-  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-white focus:px-4 focus:py-3 focus:text-santara-forest focus:shadow-soft">Skip to content</a>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-white focus:px-4 focus:py-3 focus:text-santara-forest focus:shadow-soft" data-i18n="skip_to_content">Skip to content</a>
 
   <header id="site-header" class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-santara-ink/20 text-white backdrop-blur-md transition-all duration-300">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8" aria-label="Primary navigation">
-      <a href="#home" class="brand-link" aria-label="Green Santara JSC home">
-        <img class="brand-logo" src="assets/greensantara-logo.jpg" width="5338" height="1233" alt="GreenSantara JSC">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8" aria-label="Primary navigation" data-i18n-aria-label="aria_primary_navigation">
+      <a href="#home" class="brand-link" aria-label="Green Santara JSC home" data-i18n-aria-label="aria_home">
+        <img class="brand-logo" src="assets/greensantara-logo.jpg" width="5338" height="1233" alt="GreenSantara JSC" data-i18n-alt="logo_alt">
       </a>
 
-      <button id="menu-toggle" class="inline-flex h-11 w-11 items-center justify-center rounded-md border border-white/20 bg-white/10" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu" style="display:inline-flex;position:fixed;top:1rem;left:min(330px,calc(100vw - 4rem));right:auto;z-index:100;background:#fff;color:#174c33;box-shadow:0 12px 28px rgba(20,48,34,.18);">
+      <button id="menu-toggle" class="inline-flex h-11 w-11 items-center justify-center rounded-md border border-white/20 bg-white/10" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu" style="display:inline-flex;position:fixed;top:1rem;left:min(330px,calc(100vw - 4rem));right:auto;z-index:100;background:#fff;color:#174c33;box-shadow:0 12px 28px rgba(20,48,34,.18);" data-i18n-aria-label="menu_open">
         <svg class="h-6 w-6 menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path d="M4 7h16M4 12h16M4 17h16"/>
         </svg>
       </button>
 
       <div class="hidden items-center gap-8 lg:flex">
-        <a class="nav-link" href="#home">Home</a>
-        <a class="nav-link" href="#about">About Us</a>
-        <a class="nav-link" href="#sustainability">Sustainability</a>
-        <a class="nav-link" href="#products">Products</a>
-        <a class="nav-link" href="#why-us">Why Choose Us</a>
-        <a class="rounded-md bg-white px-5 py-3 text-sm font-semibold text-santara-forest shadow-soft transition hover:-translate-y-0.5 hover:bg-santara-lime focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-santara-forest" href="#contact">Contact Us</a>
+        <a class="nav-link" href="#home" data-i18n="nav_home">Home</a>
+        <a class="nav-link" href="#about" data-i18n="nav_about">About Us</a>
+        <a class="nav-link" href="#sustainability" data-i18n="nav_sustainability">Sustainability</a>
+        <a class="nav-link" href="#products" data-i18n="nav_products">Products</a>
+        <a class="nav-link" href="#why-us" data-i18n="nav_why">Why Choose Us</a>
+        <div class="language-switcher" data-language-switcher>
+          <button class="language-toggle" type="button" aria-label="Select language" aria-expanded="false" data-language-toggle data-i18n-aria-label="language_aria">
+            <span aria-hidden="true">🌐</span>
+            <span data-language-current>English</span>
+            <span aria-hidden="true">▼</span>
+          </button>
+          <div class="language-menu hidden" data-language-menu>
+            <button type="button" class="language-option" data-lang="en" data-language-option data-i18n="language_english">English</button>
+            <button type="button" class="language-option" data-lang="vi" data-language-option data-i18n="language_vietnamese">Tiếng Việt</button>
+          </div>
+        </div>
+        <a class="rounded-md bg-white px-5 py-3 text-sm font-semibold text-santara-forest shadow-soft transition hover:-translate-y-0.5 hover:bg-santara-lime focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-santara-forest" href="#contact" data-i18n="btn_contact">Contact Us</a>
       </div>
     </nav>
     <div id="mobile-menu" class="hidden border-t border-white/10 bg-santara-ink/95 px-4 pb-5 pt-2 text-white lg:hidden">
       <div class="mx-auto grid max-w-7xl gap-2">
-        <a class="mobile-link" href="#home">Home</a>
-        <a class="mobile-link" href="#about">About Us</a>
-        <a class="mobile-link" href="#sustainability">Sustainability</a>
-        <a class="mobile-link" href="#products">Products</a>
-        <a class="mobile-link" href="#why-us">Why Choose Us</a>
-        <a class="mt-2 rounded-md bg-white px-4 py-3 text-center text-sm font-semibold text-santara-forest" href="#contact">Contact Us</a>
+        <a class="mobile-link" href="#home" data-i18n="nav_home">Home</a>
+        <a class="mobile-link" href="#about" data-i18n="nav_about">About Us</a>
+        <a class="mobile-link" href="#sustainability" data-i18n="nav_sustainability">Sustainability</a>
+        <a class="mobile-link" href="#products" data-i18n="nav_products">Products</a>
+        <a class="mobile-link" href="#why-us" data-i18n="nav_why">Why Choose Us</a>
+        <div class="language-switcher mobile-language-switcher" data-language-switcher>
+          <button class="language-toggle" type="button" aria-label="Select language" aria-expanded="false" data-language-toggle data-i18n-aria-label="language_aria">
+            <span aria-hidden="true">🌐</span>
+            <span data-language-current>English</span>
+            <span aria-hidden="true">▼</span>
+          </button>
+          <div class="language-menu hidden" data-language-menu>
+            <button type="button" class="language-option" data-lang="en" data-language-option data-i18n="language_english">English</button>
+            <button type="button" class="language-option" data-lang="vi" data-language-option data-i18n="language_vietnamese">Tiếng Việt</button>
+          </div>
+        </div>
+        <a class="mt-2 rounded-md bg-white px-4 py-3 text-center text-sm font-semibold text-santara-forest" href="#contact" data-i18n="btn_contact">Contact Us</a>
       </div>
     </div>
   </header>
@@ -91,39 +88,39 @@
       <div class="hero-overlay absolute inset-0 -z-10"></div>
       <div class="mx-auto grid min-h-[820px] max-w-7xl place-content-center justify-items-center gap-10 px-4 pb-20 pt-32 text-center sm:px-6 lg:px-8">
         <div class="mx-auto w-full max-w-[18rem] sm:max-w-4xl lg:max-w-5xl reveal">
-          <p class="mx-auto mb-5 inline-block max-w-full break-words rounded-md border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-santara-lime backdrop-blur-md sm:text-sm sm:tracking-[0.22em]">Vietnam Sustainable Agriculture Platform</p>
-          <h1 class="mx-auto max-w-5xl text-2xl font-bold leading-tight sm:text-5xl lg:text-7xl">Cultivating Sustainability. Empowering Farmers. Delivering Traceable Quality.</h1>
-          <p class="mx-auto mt-7 max-w-3xl text-lg leading-8 text-white/90 sm:text-xl">Building sustainable, traceable, and certified agricultural supply chains across Vietnam while improving farmer livelihoods and connecting communities to global markets.</p>
+          <p class="mx-auto mb-5 inline-block max-w-full break-words rounded-md border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-santara-lime backdrop-blur-md sm:text-sm sm:tracking-[0.22em]" data-i18n="hero_eyebrow">Vietnam Sustainable Agriculture Platform</p>
+          <h1 class="mx-auto max-w-5xl text-2xl font-bold leading-tight sm:text-5xl lg:text-7xl" data-i18n="hero_title">Cultivating Sustainability. Empowering Farmers. Delivering Traceable Quality.</h1>
+          <p class="mx-auto mt-7 max-w-3xl text-lg leading-8 text-white/90 sm:text-xl" data-i18n="hero_subtitle">Building sustainable, traceable, and certified agricultural supply chains across Vietnam while improving farmer livelihoods and connecting communities to global markets.</p>
           <div class="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
-            <a class="btn-primary" href="#products">Explore Our Products</a>
-            <a class="btn-secondary" href="#sustainability">Sustainability Programs</a>
+            <a class="btn-primary" href="#products" data-i18n="btn_explore_products">Explore Our Products</a>
+            <a class="btn-secondary" href="#sustainability" data-i18n="btn_sustainability_programs">Sustainability Programs</a>
           </div>
         </div>
 
-        <div class="hero-stat-grid mx-auto reveal reveal-delay-1" aria-label="Green Santara capabilities">
+        <div class="hero-stat-grid mx-auto reveal reveal-delay-1" aria-label="Green Santara capabilities" data-i18n-aria-label="hero_stats_label">
           <article class="glass-stat">
             <span class="stat-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21c4.8-2.5 8-6.8 8-12.1V5.5C16.7 5.3 14 4.2 12 2.5 10 4.2 7.3 5.3 4 5.5v3.4C4 14.2 7.2 18.5 12 21Z"/><path d="M8.7 12.8c3.1-.2 5.2-1.9 6.2-5.1.4 3.7-1.1 6.6-4.7 9"/></svg>
             </span>
-            <strong>Sustainable Farming</strong>
+            <strong data-i18n="hero_stat_sustainable_farming">Sustainable Farming</strong>
           </article>
           <article class="glass-stat">
             <span class="stat-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 7h14v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7Z"/><path d="M8 7V5.8A1.8 1.8 0 0 1 9.8 4h4.4A1.8 1.8 0 0 1 16 5.8V7M8 11h8M8 15h5"/></svg>
             </span>
-            <strong>Traceable Supply Chains</strong>
+            <strong data-i18n="hero_stat_traceable_supply_chains">Traceable Supply Chains</strong>
           </article>
           <article class="glass-stat">
             <span class="stat-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8.5 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM15.5 11a3.5 3.5 0 1 0 0-7M3 20.5c.8-3.8 2.8-5.7 5.5-5.7s4.7 1.9 5.5 5.7M13.5 15c2.9.2 5 2 5.9 5.5"/></svg>
             </span>
-            <strong>Farmer Partnerships</strong>
+            <strong data-i18n="hero_stat_farmer_partnerships">Farmer Partnerships</strong>
           </article>
           <article class="glass-stat">
             <span class="stat-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3c2.1 2.3 3.2 5.3 3.2 9s-1.1 6.7-3.2 9c-2.1-2.3-3.2-5.3-3.2-9S9.9 5.3 12 3Z"/></svg>
             </span>
-            <strong>International Market Access</strong>
+            <strong data-i18n="hero_stat_market_access">International Market Access</strong>
           </article>
         </div>
       </div>
@@ -132,21 +129,21 @@
     <section id="about" class="section-pad bg-white">
       <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[1fr_1.05fr] lg:px-8">
         <div class="relative reveal">
-          <img class="h-[460px] w-full rounded-lg object-cover shadow-lift" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" alt="Sustainable agricultural fields at sunrise">
+          <img class="h-[460px] w-full rounded-lg object-cover shadow-lift" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" alt="Sustainable agricultural fields at sunrise" data-i18n-alt="about_image_alt">
           <div class="absolute -bottom-6 left-4 right-4 rounded-lg border border-white/60 bg-white/95 p-5 shadow-soft backdrop-blur-md sm:left-auto sm:w-80">
-            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-santara-leaf">Internal Control System</p>
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-santara-leaf" data-i18n="about_ics_label">Internal Control System</p>
             <p class="mt-2 text-3xl font-bold text-santara-forest"><span data-counter="100">0</span>%</p>
-            <p class="mt-1 text-sm leading-6 text-slate-600">Designed for transparent farm records, certification readiness, and supply chain confidence.</p>
+            <p class="mt-1 text-sm leading-6 text-slate-600" data-i18n="about_ics_description">Designed for transparent farm records, certification readiness, and supply chain confidence.</p>
           </div>
         </div>
 
         <div class="reveal reveal-delay-1">
-          <p class="eyebrow">About Green Santara</p>
-          <h2 class="section-title">About Green Santara JSC</h2>
+          <p class="eyebrow" data-i18n="about_eyebrow">About Green Santara</p>
+          <h2 class="section-title" data-i18n="about_title">About Green Santara JSC</h2>
           <div class="mt-6 space-y-5 text-base leading-8 text-slate-650">
-            <p>Green Santara JSC is a Vietnam-based agricultural Joint Stock Company dedicated to developing sustainable, traceable, and certified agricultural supply chains. Working closely with farmers, cooperatives, and international partners, Green Santara promotes environmentally responsible farming practices while improving farmer livelihoods and market access.</p>
-            <p>Our mission is to create long-term value for farming communities through organic agriculture, sustainability programs, climate-smart farming, and transparent supply chains.</p>
-            <p>Through our Internal Control System (ICS), digital traceability platforms, farmer training programs, and certification initiatives, we help farmers meet international standards and connect directly with global markets.</p>
+            <p data-i18n="about_paragraph_1">Green Santara JSC is a Vietnam-based agricultural Joint Stock Company dedicated to developing sustainable, traceable, and certified agricultural supply chains. Working closely with farmers, cooperatives, and international partners, Green Santara promotes environmentally responsible farming practices while improving farmer livelihoods and market access.</p>
+            <p data-i18n="about_paragraph_2">Our mission is to create long-term value for farming communities through organic agriculture, sustainability programs, climate-smart farming, and transparent supply chains.</p>
+            <p data-i18n="about_paragraph_3">Through our Internal Control System (ICS), digital traceability platforms, farmer training programs, and certification initiatives, we help farmers meet international standards and connect directly with global markets.</p>
           </div>
         </div>
       </div>
@@ -156,45 +153,45 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid gap-8 lg:grid-cols-[0.95fr_1.25fr] lg:items-start">
           <div class="reveal">
-            <p class="eyebrow">Vision</p>
-            <h2 class="section-title">Our Vision</h2>
+            <p class="eyebrow" data-i18n="vision_eyebrow">Vision</p>
+            <h2 class="section-title" data-i18n="vision_title">Our Vision</h2>
             <div class="mt-7 rounded-lg bg-santara-forest p-7 text-white shadow-soft">
-              <p class="mt-4 text-lg leading-8 text-white/90">To become a leading sustainable agriculture platform in Vietnam, delivering premium agricultural products while protecting nature, supporting rural communities, and promoting responsible farming.</p>
+              <p class="mt-4 text-lg leading-8 text-white/90" data-i18n="vision_text">To become a leading sustainable agriculture platform in Vietnam, delivering premium agricultural products while protecting nature, supporting rural communities, and promoting responsible farming.</p>
             </div>
           </div>
 
           <div>
-            <h2 class="mb-5 text-3xl font-bold text-santara-ink">Our Mission</h2>
+            <h2 class="mb-5 text-3xl font-bold text-santara-ink" data-i18n="mission_title">Our Mission</h2>
             <div class="grid gap-4 sm:grid-cols-2">
             <article class="mission-card reveal">
               <span class="mini-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 19c8.5-.6 13-5.3 13.5-14.2C9.8 5.3 5.2 9.8 5 19Z"/><path d="M5 19c3.1-4.9 6.7-8.3 10.9-10.3"/></svg>
               </span>
-              <h3>Promote sustainable and organic agriculture.</h3>
+              <h3 data-i18n="mission_1">Promote sustainable and organic agriculture.</h3>
             </article>
             <article class="mission-card reveal reveal-delay-1">
               <span class="mini-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 17V7M4 17h16M8 17v-5M12 17V9M16 17v-8M20 17V5"/></svg>
               </span>
-              <h3>Improve farmer incomes through premium markets.</h3>
+              <h3 data-i18n="mission_2">Improve farmer incomes through premium markets.</h3>
             </article>
             <article class="mission-card reveal reveal-delay-2">
               <span class="mini-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21c4.2-3.1 7-6.8 7-11.5A7 7 0 0 0 5 9.5C5 14.2 7.8 17.9 12 21Z"/><path d="M9 12.2 11.1 14l4-5"/></svg>
               </span>
-              <h3>Protect soil, water, forests, and biodiversity.</h3>
+              <h3 data-i18n="mission_3">Protect soil, water, forests, and biodiversity.</h3>
             </article>
             <article class="mission-card reveal">
               <span class="mini-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 7h10v10H7z"/><path d="M4 12h3M17 12h3M12 4v3M12 17v3M6 6l-2-2M18 6l2-2M6 18l-2 2M18 18l2 2"/></svg>
               </span>
-              <h3>Develop fully traceable agricultural supply chains.</h3>
+              <h3 data-i18n="mission_4">Develop fully traceable agricultural supply chains.</h3>
             </article>
             <article class="mission-card sm:col-span-2 reveal reveal-delay-1">
               <span class="mini-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6.5 12 3l8 3.5v11L12 21l-8-3.5v-11Z"/><path d="m4 6.5 8 3.5 8-3.5M12 10v11"/></svg>
               </span>
-              <h3>Deliver high-quality agricultural products to international customers.</h3>
+              <h3 data-i18n="mission_5">Deliver high-quality agricultural products to international customers.</h3>
             </article>
             </div>
           </div>
@@ -205,9 +202,9 @@
     <section id="sustainability" class="section-pad bg-white">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-3xl text-center reveal">
-          <p class="eyebrow justify-center">Sustainability Projects</p>
-          <h2 class="section-title">Sustainability Projects</h2>
-          <p class="mt-5 text-lg leading-8 text-slate-600">Green Santara works with farmers, cooperatives, and communities to implement sustainability programs focused on:</p>
+          <p class="eyebrow justify-center" data-i18n="sustainability_eyebrow">Sustainability Projects</p>
+          <h2 class="section-title" data-i18n="sustainability_title">Sustainability Projects</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600" data-i18n="sustainability_intro">Green Santara works with farmers, cooperatives, and communities to implement sustainability programs focused on:</p>
         </div>
 
         <div class="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -215,52 +212,52 @@
             <span class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 20c8.2-.5 12.8-5.1 13.5-13.5C10 7.1 5.5 11.5 5 20Z"/><path d="M5 20c3.5-5.1 7.1-8.5 11-10.2"/></svg>
             </span>
-            <h3>Organic Agriculture Development</h3>
-            <p>Supporting farmers in adopting organic farming methods that improve soil health, reduce chemical dependency, and protect ecosystems.</p>
+            <h3 data-i18n="organic_title">Organic Agriculture Development</h3>
+            <p data-i18n="organic_text">Supporting farmers in adopting organic farming methods that improve soil health, reduce chemical dependency, and protect ecosystems.</p>
           </article>
           <article class="feature-card reveal reveal-delay-1">
             <span class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 19.5V6.8A2.8 2.8 0 0 1 6.8 4H20v13H6.5A2.5 2.5 0 0 0 4 19.5Zm0 0A2.5 2.5 0 0 0 6.5 22H20v-5"/><path d="M8 8h8M8 12h6"/></svg>
             </span>
-            <h3>Farmer Capacity Building</h3>
-            <p>Regular training programs on:</p>
+            <h3 data-i18n="farmer_capacity_title">Farmer Capacity Building</h3>
+            <p data-i18n="farmer_capacity_intro">Regular training programs on:</p>
             <ul class="detail-list">
-              <li>Organic farming</li>
-              <li>Climate-smart agriculture</li>
-              <li>Harvest and post-harvest management</li>
-              <li>Traceability and record keeping</li>
+              <li data-i18n="training_organic">Organic farming</li>
+              <li data-i18n="training_climate">Climate-smart agriculture</li>
+              <li data-i18n="training_harvest">Harvest and post-harvest management</li>
+              <li data-i18n="training_traceability">Traceability and record keeping</li>
             </ul>
           </article>
           <article class="feature-card reveal reveal-delay-2">
             <span class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 5h6v6H5zM13 5h6v6h-6zM5 13h6v6H5zM13 13h6v6h-6z"/><path d="M8 11v2M11 8h2M16 11v2M11 16h2"/></svg>
             </span>
-            <h3>Digital Traceability</h3>
-            <p>Using HubTrace and digital farm mapping systems to ensure complete farm-to-customer traceability.</p>
+            <h3 data-i18n="digital_traceability_title">Digital Traceability</h3>
+            <p data-i18n="digital_traceability_text">Using HubTrace and digital farm mapping systems to ensure complete farm-to-customer traceability.</p>
           </article>
           <article class="feature-card reveal">
             <span class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22V10"/><path d="M12 10c3.8 0 7-2.9 7-6.5-3.7 0-7 2.9-7 6.5Z"/><path d="M12 14c-3.8 0-7-2.9-7-6.5 3.7 0 7 2.9 7 6.5Z"/><path d="M6 20h12"/></svg>
             </span>
-            <h3>Climate and Biodiversity Protection</h3>
+            <h3 data-i18n="climate_title">Climate and Biodiversity Protection</h3>
             <ul class="detail-list">
-              <li>Soil conservation programs</li>
-              <li>Water resource protection</li>
-              <li>Agroforestry systems</li>
-              <li>Carbon-friendly farming practices</li>
+              <li data-i18n="climate_soil">Soil conservation programs</li>
+              <li data-i18n="climate_water">Water resource protection</li>
+              <li data-i18n="climate_agroforestry">Agroforestry systems</li>
+              <li data-i18n="climate_carbon">Carbon-friendly farming practices</li>
             </ul>
           </article>
           <article class="feature-card reveal reveal-delay-1 md:col-span-2 xl:col-span-2">
             <span class="feature-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7.5 11a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4ZM16.5 11a3.2 3.2 0 1 0 0-6.4M3 20c.8-3.7 2.4-5.5 4.8-5.5 2.3 0 3.9 1.8 4.7 5.5M12.5 14.7c3.5.1 5.8 1.9 6.7 5.3"/></svg>
             </span>
-            <h3>Community Development</h3>
-            <p>Supporting rural communities through:</p>
+            <h3 data-i18n="community_title">Community Development</h3>
+            <p data-i18n="community_intro">Supporting rural communities through:</p>
             <ul class="detail-list">
-              <li>Farmer organizations</li>
-              <li>Cooperative development</li>
-              <li>Training and awareness programs</li>
-              <li>Access to international certification programs</li>
+              <li data-i18n="community_farmer_org">Farmer organizations</li>
+              <li data-i18n="community_cooperative">Cooperative development</li>
+              <li data-i18n="community_training">Training and awareness programs</li>
+              <li data-i18n="community_certification">Access to international certification programs</li>
             </ul>
           </article>
         </div>
@@ -270,80 +267,80 @@
     <section id="products" class="section-pad bg-santara-mist">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-3xl text-center reveal">
-          <p class="eyebrow justify-center">Products</p>
-          <h2 class="section-title">Our Products</h2>
-          <p class="mt-5 text-lg leading-8 text-slate-600">Coffee, black pepper, and macadamia programs designed around quality, certification compliance, and farm-level transparency.</p>
+          <p class="eyebrow justify-center" data-i18n="products_eyebrow">Products</p>
+          <h2 class="section-title" data-i18n="products_title">Our Products</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600" data-i18n="products_intro">Coffee, black pepper, and macadamia programs designed around quality, certification compliance, and farm-level transparency.</p>
         </div>
 
         <div class="mt-14 grid gap-7 lg:grid-cols-3">
           <article class="product-card reveal">
-            <img src="assets/coffee.jpeg" alt="Coffee plants growing on a plantation">
+            <img src="assets/coffee.jpeg" alt="Coffee plants growing on a plantation" data-i18n-alt="coffee_image_alt">
             <div class="product-body">
-              <p class="product-kicker">Coffee</p>
-              <h3>Coffee</h3>
-              <p>Vietnam is one of the world's leading coffee-producing countries, and Green Santara works closely with coffee farmers to produce high-quality, traceable, and sustainable coffee.</p>
-              <h4 class="detail-heading">Products</h4>
+              <p class="product-kicker" data-i18n="product_coffee">Coffee</p>
+              <h3 data-i18n="product_coffee">Coffee</h3>
+              <p data-i18n="coffee_description">Vietnam is one of the world's leading coffee-producing countries, and Green Santara works closely with coffee farmers to produce high-quality, traceable, and sustainable coffee.</p>
+              <h4 class="detail-heading" data-i18n="products_label">Products</h4>
               <ul class="chip-list" aria-label="Coffee products">
-                <li>Robusta Green Coffee Beans</li>
-                <li>Arabica Green Coffee Beans</li>
-                <li>Organic Coffee</li>
-                <li>EUDR Coffee</li>
-                <li>Specialty Coffee</li>
-                <li>Fairtrade Coffee</li>
-                <li>Sustainable Coffee Programs</li>
+                <li data-i18n="coffee_product_robusta">Robusta Green Coffee Beans</li>
+                <li data-i18n="coffee_product_arabica">Arabica Green Coffee Beans</li>
+                <li data-i18n="coffee_product_organic">Organic Coffee</li>
+                <li data-i18n="coffee_product_eudr">EUDR Coffee</li>
+                <li data-i18n="coffee_product_specialty">Specialty Coffee</li>
+                <li data-i18n="coffee_product_fairtrade">Fairtrade Coffee</li>
+                <li data-i18n="coffee_product_programs">Sustainable Coffee Programs</li>
               </ul>
-              <h4 class="detail-heading">Quality Focus</h4>
+              <h4 class="detail-heading" data-i18n="quality_focus_label">Quality Focus</h4>
               <ul class="detail-list">
-                <li>Farm traceability</li>
-                <li>Careful harvesting</li>
-                <li>Quality grading</li>
-                <li>Sustainable processing</li>
-                <li>International certification compliance</li>
+                <li data-i18n="coffee_quality_traceability">Farm traceability</li>
+                <li data-i18n="coffee_quality_harvesting">Careful harvesting</li>
+                <li data-i18n="coffee_quality_grading">Quality grading</li>
+                <li data-i18n="coffee_quality_processing">Sustainable processing</li>
+                <li data-i18n="coffee_quality_compliance">International certification compliance</li>
               </ul>
             </div>
           </article>
 
           <article class="product-card reveal reveal-delay-1">
-            <img src="assets/black_pepper.jpeg" alt="Black peppercorns and spices close up">
+            <img src="assets/black_pepper.jpeg" alt="Black peppercorns and spices close up" data-i18n-alt="black_pepper_image_alt">
             <div class="product-body">
-              <p class="product-kicker">Black Pepper</p>
-              <h3>Black Pepper</h3>
-              <p>Green Santara sources premium Vietnamese black pepper from carefully selected farmer groups committed to sustainable agricultural practices.</p>
-              <h4 class="detail-heading">Products</h4>
+              <p class="product-kicker" data-i18n="product_black_pepper">Black Pepper</p>
+              <h3 data-i18n="product_black_pepper">Black Pepper</h3>
+              <p data-i18n="black_pepper_description">Green Santara sources premium Vietnamese black pepper from carefully selected farmer groups committed to sustainable agricultural practices.</p>
+              <h4 class="detail-heading" data-i18n="products_label">Products</h4>
               <ul class="chip-list" aria-label="Black pepper products">
-                <li>Black Pepper Whole</li>
-                <li>Organic Black Pepper</li>
-                <li>Steam Sterilized Black Pepper</li>
-                <li>Black Pepper Powder</li>
+                <li data-i18n="pepper_product_whole">Black Pepper Whole</li>
+                <li data-i18n="pepper_product_organic">Organic Black Pepper</li>
+                <li data-i18n="pepper_product_steam">Steam Sterilized Black Pepper</li>
+                <li data-i18n="pepper_product_powder">Black Pepper Powder</li>
               </ul>
-              <h4 class="detail-heading">Features</h4>
+              <h4 class="detail-heading" data-i18n="features_label">Features</h4>
               <ul class="detail-list">
-                <li>High piperine content</li>
-                <li>Traceable supply chain</li>
-                <li>Sustainable production</li>
-                <li>International quality standards</li>
+                <li data-i18n="pepper_feature_piperine">High piperine content</li>
+                <li data-i18n="pepper_feature_traceability">Traceable supply chain</li>
+                <li data-i18n="pepper_feature_sustainable">Sustainable production</li>
+                <li data-i18n="pepper_feature_standards">International quality standards</li>
               </ul>
             </div>
           </article>
 
           <article class="product-card reveal reveal-delay-2">
-            <img src="assets/macedamia.jpeg" alt="Macadamia nuts in shell">
+            <img src="assets/macedamia.jpeg" alt="Macadamia nuts in shell" data-i18n-alt="macadamia_image_alt">
             <div class="product-body">
-              <p class="product-kicker">Macadamia</p>
-              <h3>Macadamia</h3>
-              <p>Green Santara collaborates with farmers in the Central Highlands of Vietnam to develop premium macadamia production systems that support long-term sustainability and farmer prosperity.</p>
-              <h4 class="detail-heading">Products</h4>
+              <p class="product-kicker" data-i18n="product_macadamia">Macadamia</p>
+              <h3 data-i18n="product_macadamia">Macadamia</h3>
+              <p data-i18n="macadamia_description">Green Santara collaborates with farmers in the Central Highlands of Vietnam to develop premium macadamia production systems that support long-term sustainability and farmer prosperity.</p>
+              <h4 class="detail-heading" data-i18n="products_label">Products</h4>
               <ul class="chip-list" aria-label="Macadamia products">
-                <li>Macadamia Nuts in Shell</li>
-                <li>Kernel Grade Macadamia</li>
-                <li>Premium Export Quality Macadamia</li>
+                <li data-i18n="macadamia_product_shell">Macadamia Nuts in Shell</li>
+                <li data-i18n="macadamia_product_kernel">Kernel Grade Macadamia</li>
+                <li data-i18n="macadamia_product_export">Premium Export Quality Macadamia</li>
               </ul>
-              <h4 class="detail-heading">Benefits</h4>
+              <h4 class="detail-heading" data-i18n="benefits_label">Benefits</h4>
               <ul class="detail-list">
-                <li>Carefully selected farms</li>
-                <li>Sustainable cultivation practices</li>
-                <li>Full traceability</li>
-                <li>Premium quality standards</li>
+                <li data-i18n="macadamia_benefit_farms">Carefully selected farms</li>
+                <li data-i18n="macadamia_benefit_cultivation">Sustainable cultivation practices</li>
+                <li data-i18n="macadamia_benefit_traceability">Full traceability</li>
+                <li data-i18n="macadamia_benefit_quality">Premium quality standards</li>
               </ul>
             </div>
           </article>
@@ -355,19 +352,19 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid gap-10 lg:grid-cols-[0.9fr_1.25fr] lg:items-center">
           <div class="reveal">
-            <p class="eyebrow">Why Green Santara</p>
-            <h2 class="section-title">Why Green Santara?</h2>
-            <p class="mt-5 text-lg leading-8 text-slate-600">Green Santara connects field-level practices with buyer-ready assurance, helping rural communities and global partners grow from the same foundation of trust.</p>
+            <p class="eyebrow" data-i18n="why_eyebrow">Why Green Santara</p>
+            <h2 class="section-title" data-i18n="why_title">Why Green Santara?</h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600" data-i18n="why_intro">Green Santara connects field-level practices with buyer-ready assurance, helping rural communities and global partners grow from the same foundation of trust.</p>
           </div>
           <div class="grid gap-4 sm:grid-cols-2">
-            <article class="why-card reveal"><span class="check-icon"></span><p>Sustainable Agriculture Programs</p></article>
-            <article class="why-card reveal reveal-delay-1"><span class="check-icon"></span><p>Organic and International Certifications</p></article>
-            <article class="why-card reveal reveal-delay-2"><span class="check-icon"></span><p>Farmer-Centric Development</p></article>
-            <article class="why-card reveal"><span class="check-icon"></span><p>Full Traceability Solutions</p></article>
-            <article class="why-card reveal reveal-delay-1"><span class="check-icon"></span><p>Strong Cooperative Partnerships</p></article>
-            <article class="why-card reveal reveal-delay-2"><span class="check-icon"></span><p>Environmental Responsibility</p></article>
-            <article class="why-card reveal"><span class="check-icon"></span><p>Reliable Supply Chain Management</p></article>
-            <article class="why-card reveal reveal-delay-1"><span class="check-icon"></span><p>Long-Term International Market Access</p></article>
+            <article class="why-card reveal"><span class="check-icon"></span><p data-i18n="why_sustainable">Sustainable Agriculture Programs</p></article>
+            <article class="why-card reveal reveal-delay-1"><span class="check-icon"></span><p data-i18n="why_certifications">Organic and International Certifications</p></article>
+            <article class="why-card reveal reveal-delay-2"><span class="check-icon"></span><p data-i18n="why_farmer">Farmer-Centric Development</p></article>
+            <article class="why-card reveal"><span class="check-icon"></span><p data-i18n="why_traceability">Full Traceability Solutions</p></article>
+            <article class="why-card reveal reveal-delay-1"><span class="check-icon"></span><p data-i18n="why_cooperative">Strong Cooperative Partnerships</p></article>
+            <article class="why-card reveal reveal-delay-2"><span class="check-icon"></span><p data-i18n="why_environment">Environmental Responsibility</p></article>
+            <article class="why-card reveal"><span class="check-icon"></span><p data-i18n="why_supply">Reliable Supply Chain Management</p></article>
+            <article class="why-card reveal reveal-delay-1"><span class="check-icon"></span><p data-i18n="why_market">Long-Term International Market Access</p></article>
           </div>
         </div>
       </div>
@@ -376,25 +373,25 @@
     <section id="traceability" class="section-pad overflow-hidden bg-santara-ink text-white">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-3xl text-center reveal">
-          <p class="eyebrow justify-center text-santara-lime">Traceability & Impact</p>
-          <h2 class="section-title text-white">From Farmer to Global Market</h2>
-          <p class="mt-5 text-lg leading-8 text-white/75">An integrated pathway that links training, certification, digital traceability, export readiness, and premium market access.</p>
+          <p class="eyebrow justify-center text-santara-lime" data-i18n="trace_eyebrow">Traceability & Impact</p>
+          <h2 class="section-title text-white" data-i18n="trace_title">From Farmer to Global Market</h2>
+          <p class="mt-5 text-lg leading-8 text-white/75" data-i18n="trace_intro">An integrated pathway that links training, certification, digital traceability, export readiness, and premium market access.</p>
         </div>
 
-        <div class="trace-flow mt-16 reveal" aria-label="Traceability process">
-          <div class="flow-step"><span>01</span><strong>Farmer</strong></div>
-          <div class="flow-step"><span>02</span><strong>Training</strong></div>
-          <div class="flow-step"><span>03</span><strong>Certification</strong></div>
-          <div class="flow-step"><span>04</span><strong>Traceability</strong></div>
-          <div class="flow-step"><span>05</span><strong>Export</strong></div>
-          <div class="flow-step"><span>06</span><strong>Global Market</strong></div>
+        <div class="trace-flow mt-16 reveal" aria-label="Traceability process" data-i18n-aria-label="trace_flow_label">
+          <div class="flow-step"><span>01</span><strong data-i18n="flow_farmer">Farmer</strong></div>
+          <div class="flow-step"><span>02</span><strong data-i18n="flow_training">Training</strong></div>
+          <div class="flow-step"><span>03</span><strong data-i18n="flow_certification">Certification</strong></div>
+          <div class="flow-step"><span>04</span><strong data-i18n="flow_traceability">Traceability</strong></div>
+          <div class="flow-step"><span>05</span><strong data-i18n="flow_export">Export</strong></div>
+          <div class="flow-step"><span>06</span><strong data-i18n="flow_global_market">Global Market</strong></div>
         </div>
 
         <div class="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-          <article class="impact-card reveal"><h3>Internal Control System (ICS)</h3><p>Field-level control points for farmer records, audit readiness, and certification consistency.</p></article>
-          <article class="impact-card reveal reveal-delay-1"><h3>Digital Traceability</h3><p>Farm mapping and transaction records that help products remain visible through the chain.</p></article>
-          <article class="impact-card reveal reveal-delay-2"><h3>Sustainable Farming</h3><p>Soil, water, agroforestry, and biodiversity practices embedded into program design.</p></article>
-          <article class="impact-card reveal"><h3>Premium Market Access</h3><p>Commercial pathways that reward better practices and support farmer livelihoods.</p></article>
+          <article class="impact-card reveal"><h3 data-i18n="impact_ics_title">Internal Control System (ICS)</h3><p data-i18n="impact_ics_text">Field-level control points for farmer records, audit readiness, and certification consistency.</p></article>
+          <article class="impact-card reveal reveal-delay-1"><h3 data-i18n="impact_digital_title">Digital Traceability</h3><p data-i18n="impact_digital_text">Farm mapping and transaction records that help products remain visible through the chain.</p></article>
+          <article class="impact-card reveal reveal-delay-2"><h3 data-i18n="impact_sustainable_title">Sustainable Farming</h3><p data-i18n="impact_sustainable_text">Soil, water, agroforestry, and biodiversity practices embedded into program design.</p></article>
+          <article class="impact-card reveal"><h3 data-i18n="impact_market_title">Premium Market Access</h3><p data-i18n="impact_market_text">Commercial pathways that reward better practices and support farmer livelihoods.</p></article>
         </div>
       </div>
     </section>
@@ -402,12 +399,12 @@
     <section class="cta-section relative isolate overflow-hidden py-24 text-white">
       <div class="absolute inset-0 -z-10 bg-santara-ink/75"></div>
       <div class="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8 reveal">
-        <p class="eyebrow justify-center text-santara-lime">Partnership</p>
-        <h2 class="text-4xl font-bold leading-tight sm:text-5xl">Growing Together for a Sustainable Future</h2>
-        <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80">Partner with Green Santara JSC to build transparent, sustainable, and globally connected agricultural supply chains.</p>
+        <p class="eyebrow justify-center text-santara-lime" data-i18n="cta_eyebrow">Partnership</p>
+        <h2 class="text-4xl font-bold leading-tight sm:text-5xl" data-i18n="cta_title">Growing Together for a Sustainable Future</h2>
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80" data-i18n="cta_text">Partner with Green Santara JSC to build transparent, sustainable, and globally connected agricultural supply chains.</p>
         <div class="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
-          <a class="btn-primary" href="#contact">Contact Us</a>
-          <a class="btn-secondary" href="#contact">Request Partnership</a>
+          <a class="btn-primary" href="#contact" data-i18n="btn_contact">Contact Us</a>
+          <a class="btn-secondary" href="#contact" data-i18n="btn_request_partnership">Request Partnership</a>
         </div>
       </div>
     </section>
@@ -416,29 +413,30 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div class="reveal">
-            <p class="eyebrow">Contact</p>
-            <h2 class="section-title">Contact Us</h2>
-            <p class="mt-5 text-lg leading-8 text-slate-600">Connect with Green Santara JSC for product sourcing, farmer partnerships, certification programs, and long-term supply chain collaboration.</p>
-            <p class="mt-6 text-xl font-bold text-santara-forest">GREEN SANTARA JSC</p>
+            <p class="eyebrow" data-i18n="contact_eyebrow">Contact</p>
+            <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600" data-i18n="contact_intro">Connect with Green Santara JSC for product sourcing, farmer partnerships, certification programs, and long-term supply chain collaboration.</p>
+            <p class="mt-6 text-xl font-bold text-santara-forest" data-i18n="company_name">GREEN SANTARA JSC</p>
 
             <div class="mt-9 space-y-4">
               <a class="contact-row" href="mailto:info@greensantara.com">
                 <span class="contact-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
                 </span>
-                <span><strong>Email</strong>info@greensantara.com</span>
+                <span><strong data-i18n="contact_email_label">Email</strong>info@greensantara.com</span>
               </a>
               <div class="contact-row">
                 <span class="contact-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-4.9 7-11a7 7 0 1 0-14 0c0 6.1 7 11 7 11Z"/><circle cx="12" cy="10" r="2.3"/></svg>
                 </span>
-                <span><strong>Location</strong>Ho Chi Minh City, Vietnam</span>
+                <span><strong data-i18n="contact_location_label">Location</strong><span data-i18n="contact_location">Ho Chi Minh City, Vietnam</span></span>
               </div>
             </div>
 
-            <div class="google-map mt-10" aria-label="Google map showing Ho Chi Minh City, Vietnam">
+            <div class="google-map mt-10" aria-label="Google map showing Ho Chi Minh City, Vietnam" data-i18n-aria-label="map_aria">
               <iframe
                 title="Ho Chi Minh City, Vietnam map"
+                data-i18n-title="map_title"
                 src="https://www.google.com/maps?q=Ho%20Chi%20Minh%20City%2C%20Vietnam&output=embed"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -450,27 +448,27 @@
           <form id="contact-form" class="contact-form reveal reveal-delay-1" novalidate>
             <div class="grid gap-5 sm:grid-cols-2">
               <div class="field">
-                <label for="name">Name</label>
+                <label for="name" data-i18n="form_name_label">Name</label>
                 <input id="name" name="name" type="text" autocomplete="name" required>
                 <p class="field-error" data-error-for="name"></p>
               </div>
               <div class="field">
-                <label for="email">Email</label>
+                <label for="email" data-i18n="form_email_label">Email</label>
                 <input id="email" name="email" type="email" autocomplete="email" required>
                 <p class="field-error" data-error-for="email"></p>
               </div>
             </div>
             <div class="field">
-              <label for="company">Company</label>
+              <label for="company" data-i18n="form_company_label">Company</label>
               <input id="company" name="company" type="text" autocomplete="organization" required>
               <p class="field-error" data-error-for="company"></p>
             </div>
             <div class="field">
-              <label for="message">Message</label>
+              <label for="message" data-i18n="form_message_label">Message</label>
               <textarea id="message" name="message" rows="7" required></textarea>
               <p class="field-error" data-error-for="message"></p>
             </div>
-            <button class="btn-submit" type="submit">Send Message</button>
+            <button class="btn-submit" type="submit" data-i18n="btn_send_message">Send Message</button>
             <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -481,58 +479,59 @@
   <footer class="bg-santara-ink text-white">
     <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.8fr_0.8fr] lg:px-8">
       <div>
-        <a href="#home" class="footer-brand" aria-label="Green Santara JSC home">
-          <img src="assets/greensantara-logo.jpg" width="5338" height="1233" alt="GreenSantara JSC">
+        <a href="#home" class="footer-brand" aria-label="Green Santara JSC home" data-i18n-aria-label="aria_home">
+          <img src="assets/greensantara-logo.jpg" width="5338" height="1233" alt="GreenSantara JSC" data-i18n-alt="logo_alt">
         </a>
-        <p class="mt-5 max-w-sm leading-7 text-white/70">A Vietnam-based sustainable agriculture company building transparent supply chains for premium coffee, black pepper, and macadamia.</p>
-        <p class="mt-6 font-semibold text-santara-lime">Growing Together for a Sustainable Future</p>
-        <div class="mt-6 flex gap-3" aria-label="Social media links">
-          <a class="social-link" href="#" aria-label="LinkedIn">
+        <p class="mt-5 max-w-sm leading-7 text-white/70" data-i18n="footer_summary">A Vietnam-based sustainable agriculture company building transparent supply chains for premium coffee, black pepper, and macadamia.</p>
+        <p class="mt-6 font-semibold text-santara-lime" data-i18n="footer_tagline">Growing Together for a Sustainable Future</p>
+        <div class="mt-6 flex gap-3" aria-label="Social media links" data-i18n-aria-label="footer_social_label">
+          <a class="social-link" href="#" aria-label="LinkedIn" data-i18n-aria-label="social_linkedin">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.7 8.8H3.3v11h3.4v-11ZM5 7.3c1.1 0 1.9-.8 1.9-1.8S6.1 3.7 5 3.7s-1.9.8-1.9 1.8S3.9 7.3 5 7.3ZM20.8 13.5c0-3.1-1.6-4.9-4.2-4.9-1.8 0-2.9 1-3.3 1.8V8.8H10v11h3.4v-6c0-1.6.8-2.5 2-2.5s2 .9 2 2.5v6h3.4v-6.3Z"/></svg>
           </a>
-          <a class="social-link" href="#" aria-label="Facebook">
+          <a class="social-link" href="#" aria-label="Facebook" data-i18n-aria-label="social_facebook">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.2 8.2V6.7c0-.7.5-.9 1-.9h2.2V2.4L14.5 2c-3.2 0-4 2-4 3.9v2.3H7.8V12h2.7v10h3.7V12h3l.5-3.8h-3.5Z"/></svg>
           </a>
-          <a class="social-link" href="#" aria-label="Email">
+          <a class="social-link" href="#" aria-label="Email" data-i18n-aria-label="social_email">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
           </a>
         </div>
       </div>
       <div>
-        <h3 class="footer-heading">Quick Links</h3>
+        <h3 class="footer-heading" data-i18n="footer_quick_links">Quick Links</h3>
         <ul class="footer-list">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#sustainability">Sustainability</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#why-us">Why Choose Us</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" data-i18n="footer_about">About Us</a></li>
+          <li><a href="#sustainability" data-i18n="footer_sustainability">Sustainability</a></li>
+          <li><a href="#products" data-i18n="footer_products">Products</a></li>
+          <li><a href="#why-us" data-i18n="footer_why">Why Choose Us</a></li>
+          <li><a href="#contact" data-i18n="footer_contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="footer-heading">Sustainability</h3>
+        <h3 class="footer-heading" data-i18n="footer_sustainability">Sustainability</h3>
         <ul class="footer-list">
-          <li><a href="#sustainability">Organic Agriculture</a></li>
-          <li><a href="#sustainability">Farmer Training</a></li>
-          <li><a href="#traceability">Digital Traceability</a></li>
-          <li><a href="#traceability">ICS Programs</a></li>
+          <li><a href="#sustainability" data-i18n="footer_organic">Organic Agriculture</a></li>
+          <li><a href="#sustainability" data-i18n="footer_farmer_training">Farmer Training</a></li>
+          <li><a href="#traceability" data-i18n="footer_digital_traceability">Digital Traceability</a></li>
+          <li><a href="#traceability" data-i18n="footer_ics_programs">ICS Programs</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="footer-heading">Products</h3>
+        <h3 class="footer-heading" data-i18n="footer_products">Products</h3>
         <ul class="footer-list">
-          <li><a href="#products">Coffee</a></li>
-          <li><a href="#products">Black Pepper</a></li>
-          <li><a href="#products">Macadamia</a></li>
-          <li><a href="mailto:info@greensantara.com">info@greensantara.com</a></li>
-          <li>Ho Chi Minh City, Vietnam</li>
+          <li><a href="#products" data-i18n="product_coffee">Coffee</a></li>
+          <li><a href="#products" data-i18n="product_black_pepper">Black Pepper</a></li>
+          <li><a href="#products" data-i18n="product_macadamia">Macadamia</a></li>
+          <li><a href="mailto:info@greensantara.com" data-i18n="footer_email">info@greensantara.com</a></li>
+          <li data-i18n="footer_location">Ho Chi Minh City, Vietnam</li>
         </ul>
       </div>
     </div>
     <div class="border-t border-white/10 py-6">
-      <p class="mx-auto max-w-7xl px-4 text-sm text-white/60 sm:px-6 lg:px-8">&copy; 2026 Green Santara JSC. All Rights Reserved.</p>
+      <p class="mx-auto max-w-7xl px-4 text-sm text-white/60 sm:px-6 lg:px-8" data-i18n="copyright">&copy; 2026 Green Santara JSC. All Rights Reserved.</p>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

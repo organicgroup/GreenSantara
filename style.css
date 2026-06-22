@@ -87,6 +87,76 @@ body {
   height: auto;
 }
 
+.language-switcher {
+  position: relative;
+}
+
+.language-toggle {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.7rem 0.85rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 750;
+  backdrop-filter: blur(12px);
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.language-toggle:hover,
+.language-toggle[aria-expanded="true"] {
+  border-color: rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.language-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  z-index: 90;
+  min-width: 10rem;
+  overflow: hidden;
+  border: 1px solid rgba(23, 76, 51, 0.12);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 18px 45px rgba(20, 48, 34, 0.16);
+}
+
+.language-option {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 750;
+  text-align: left;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.language-option:hover,
+.language-option.active {
+  background: var(--mist);
+  color: var(--forest);
+}
+
+.mobile-language-switcher {
+  margin-top: 0.25rem;
+}
+
+.mobile-language-switcher .language-toggle {
+  width: 100%;
+  justify-content: center;
+}
+
+.mobile-language-switcher .language-menu {
+  position: static;
+  margin-top: 0.5rem;
+}
+
 #menu-toggle {
   position: absolute;
   top: 1rem;
